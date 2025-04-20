@@ -1,5 +1,3 @@
----
-
 ## SDLWrapper
 
 **SDLWrapper** is a lightweight Swift library that provides a streamlined interface to the core functionality of [SDL2](https://www.libsdl.org/). Designed for simplicity and ease of use, it lets you quickly set up windows, render graphics, and handle events in your Swift projects.
@@ -51,6 +49,3 @@
 **Note:**  
 SDLWrapper currently covers essential SDL2 functionality. More features and commands will be added in future updates.
 
----
-
-Sources
