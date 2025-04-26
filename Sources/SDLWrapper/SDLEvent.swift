@@ -37,7 +37,7 @@ public struct SDLEvent {
 
 // Extension to SDLWrapper to use the new SDLEvent type
 extension SDLWrapper {
-    public static func pollEvent(_ event: inout SDLEvent) -> Bool {
-        return event.withEventPointer { SDL_PollEvent($0) != 0 }
+    public static func pollEvent(_ event: inout SDLEvent) -> Int32 {
+        return event.withEventPointer { SDL_PollEvent($0) }
     }
 } 

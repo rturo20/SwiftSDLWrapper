@@ -25,8 +25,29 @@
 - `SDLWrapper.renderDrawPoint(_:x:y:)`  
   Draw a single point on the rendering target.
 
+- `SDLWrapper.renderDrawLine(_:x1:y1:x2:y2:)`  
+  Draw a line between two points on the rendering target.
+
+- `SDLWrapper.renderDrawRect(_:x:y:w:h:)`  
+  Draw the outline of a rectangle on the rendering target.
+
+- `SDLWrapper.renderFillRect(_:x:y:w:h:)`  
+  Draw a filled rectangle on the rendering target.
+
 - `SDLWrapper.renderPresent(_:)`  
   Update the window with rendered content.
+
+- `SDLWrapper.createTextureFromSurface(_:_:)`  
+  Create a texture from an existing surface.
+
+- `SDLWrapper.getWindowSize(_:)`  
+  Get the size of a window. Returns a tuple of (width: Int32, height: Int32).
+
+- `SDLWrapper.setWindowTitle(_:_:)`  
+  Set a new title for an existing window.
+
+- `SDLWrapper.getMouseState()`  
+  Get the current mouse position and button state. Returns (x: Int32, y: Int32, buttons: UInt32).
 
 - `SDLWrapper.delay(_:)`  
   Pause execution for a specified number of milliseconds.
@@ -45,6 +66,8 @@
 - `SDLWrapper.SDL_WINDOWPOS_UNDEFINED`
 - `SDLWrapper.SDL_WINDOW_SHOWN`
 - `SDLWrapper.SDL_QUIT`
+- `SDLWrapper.SDL_RENDERER_ACCELERATED`
+- `SDLWrapper.SDL_INIT_VIDEO`
 
 **Note:**  
 SDLWrapper currently covers essential SDL2 functionality. More features and commands will be added in future updates.
